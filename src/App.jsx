@@ -1,5 +1,6 @@
 
 import './App.css'
+import Counter from './Practice/Counter'
 
 function App() {
 
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
       <div className='min-h-screen'>
-          
+        <Counter />
       </div>
     </>
   )
