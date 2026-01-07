@@ -1,6 +1,7 @@
 
 import './App.css'
 import Counter from './Practice/Counter'
+import Modal from './Practice/Modal'
 import Todoo from './Practice/Todoo'
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <>
       <div className='min-h-screen'>
         {/* <Counter /> */}
-        <Todoo />
+        {/* <Todoo /> */}
+        <Modal />
 
       </div>
     </>
