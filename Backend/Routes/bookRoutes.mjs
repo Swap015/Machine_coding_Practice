@@ -1,6 +1,6 @@
 
 import express from "express";
-import { createBook, deleteBook, EditBook, getBook } from "./bookController.mjs";
+import { createBook, deleteBook, EditBook, getBook } from "../Controllers/bookController.mjs";
 
 const router = express.Router();
 
