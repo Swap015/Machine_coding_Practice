@@ -1,22 +1,30 @@
-import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment, reset } from "./CounterSlice";
 
+import { useDispatch, useSelector } from 'react-redux'
+import { decrement, increment, reset } from './CounterSlice';
 
-const Counter = () => {
+const CounterRedux = () => {
 
     const count = useSelector((state) => state.counter.value);
     const dispatch = useDispatch();
 
+
+
     return (
-        <>
-            <h2>{count}</h2>
-            <button onClick={() => dispatch(increment())}>+</button>
-            <button onClick={() => dispatch(decrement())}>-</button>
-            <button onClick={() => dispatch(reset())}>Reset</button>
+        <div className='flex flex-col gap-5 justify-center items-center'>
 
-        </>
+            <h1 className='text-4xl'>{count}</h1>
+
+            <div className="flex gap-8 font-bold">
+
+                <button className='bg-amber-500 py-1 px-2 rounded-full text-4xl' onClick={() => dispatch(increment())}>+</button>
+                <button onClick={() => dispatch(decrement())} className='bg-amber-500 py-1 px-2 rounded-full text-4xl'>-</button>
+                <button onClick={() => dispatch(reset())} className='bg-amber-500 py-1 px-2 rounded-full text-xl'>Reset</button>
+
+            </div>
+
+
+        </div>
     )
-
 }
 
-export default Counter;
+export default CounterRedux;

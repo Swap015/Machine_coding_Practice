@@ -5,6 +5,7 @@ import Debouncee from './Practice/Debounce'
 import NewTodo from './Practice/NewTodo'
 // import Modal from './Practice/Modal'
 // import Todoo from './Practice/Todoo'
+import CounterRedux from "./Practice/Redux/CounterRedux"
 
 function App() {
 
@@ -15,9 +16,10 @@ function App() {
         {/* <Counter /> */}
         {/* <Todoo /> */}
         {/* <Modal /> */}
-   
+
         {/* <Debouncee /> */}
-        <NewTodo/>
+        {/* <NewTodo/> */}
+        <CounterRedux />
 
       </div>
     </>
