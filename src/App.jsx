@@ -8,6 +8,7 @@ import NewTodo from './Practice/NewTodo'
 // import Todoo from './Practice/Todoo'
 import CounterRedux from "./Practice/Redux/CounterRedux"
 import ThemeToggle from './Practice/Redux/ThemeToggle'
+import TodoApp from './Practice/Redux/TodoApp'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <div className={`min-h-screen transition-all duration-300 
-        ${dark ? "bg-black text-white" : "bg-white text-black"}`}>
+        ${dark ? "bg-black text-white " : "bg-white text-black"}`}>
 
 
       <div className='min-h-screen'>
@@ -25,9 +26,9 @@ function App() {
 
         {/* <Debouncee /> */}
         {/* <NewTodo/> */}
-        <CounterRedux />
+        {/* <CounterRedux /> */}
         {/* <ThemeToggle /> */}
-
+        <TodoApp />
       </div>
 
 
