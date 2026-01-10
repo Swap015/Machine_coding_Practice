@@ -18,6 +18,7 @@ const TodoApp = () => {
         <div className="min-h-screen flex justify-center items-center ">
             <div className=" p-6 rounded-lg shadow-lg w-[400px]">
                 <h1 className="text-2xl font-bold mb-4 text-center">Redux Todo</h1>
+              
                 <ThemeToggle />
 
                 <div className="flex gap-2 mb-4">
@@ -27,6 +28,7 @@ const TodoApp = () => {
                         placeholder="Enter todo..."
                         className="flex-1 border px-3 py-2 rounded"
                     />
+                    
                     <button
                         onClick={handleAdd}
                         className="bg-blue-500 text-white px-4 py-2 rounded"

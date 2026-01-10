@@ -9,6 +9,7 @@ import NewTodo from './Practice/NewTodo'
 import CounterRedux from "./Practice/Redux/CounterRedux"
 import ThemeToggle from './Practice/Redux/ThemeToggle'
 import TodoApp from './Practice/Redux/TodoApp'
+import Pagination from './Practice/Pagination'
 
 function App() {
 
@@ -28,7 +29,10 @@ function App() {
         {/* <NewTodo/> */}
         {/* <CounterRedux /> */}
         {/* <ThemeToggle /> */}
-        <TodoApp />
+        {/* <TodoApp /> */}
+
+
+        <Pagination />
       </div>
 
 
